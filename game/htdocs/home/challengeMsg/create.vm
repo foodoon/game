@@ -1,0 +1,59 @@
+新增
+
+<form name="challengeMsgForm" action="$!homeServer.getURI("challengeMsg/doCreate.htm")" method="post">
+  <table>
+    #springBind("challengeMsgForm.id")
+    <tr>
+        <td>id</td>
+        <td>
+            <input class="form-control" type="text" name="${status.expression}" value="$!status.value" />
+            #foreach($error in $status.errorMessages) <b>$error</b>  #end
+        </td>
+    </tr>
+    #springBind("challengeMsgForm.challengeId")
+    <tr>
+        <td>challengeId</td>
+        <td>
+            <input class="form-control" type="text" name="${status.expression}" value="$!status.value" />
+            #foreach($error in $status.errorMessages) <b>$error</b>  #end
+        </td>
+    </tr>
+    #springBind("challengeMsgForm.msg")
+    <tr>
+        <td>msg</td>
+        <td>
+            <input class="form-control" type="text" name="${status.expression}" value="$!status.value" />
+            #foreach($error in $status.errorMessages) <b>$error</b>  #end
+        </td>
+    </tr>
+    #springBind("challengeMsgForm.isDeleted")
+    <tr>
+        <td>isDeleted</td>
+        <td>
+            <input class="form-control" type="text" name="${status.expression}" value="$!status.value" />
+            #foreach($error in $status.errorMessages) <b>$error</b>  #end
+        </td>
+    </tr>
+    #springBind("challengeMsgForm.gmtModify")
+    <tr>
+        <td>gmtModify</td>
+        <td>
+            <input class="form-control" type="text" name="${status.expression}" value="$!status.value" />
+            #foreach($error in $status.errorMessages) <b>$error</b>  #end
+        </td>
+    </tr>
+    #springBind("challengeMsgForm.gmtCreate")
+    <tr>
+        <td>gmtCreate</td>
+        <td>
+            <input class="form-control" type="text" name="${status.expression}" value="$!status.value" />
+            #foreach($error in $status.errorMessages) <b>$error</b>  #end
+        </td>
+    </tr>
+
+	  <tr>
+	  <td colspan="2">
+	  <input type="submit" class="btn" value="提交"/></td>
+	  </tr>
+  </table>
+</form>

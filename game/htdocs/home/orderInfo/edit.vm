@@ -1,0 +1,68 @@
+编辑
+
+<form name="orderInfoEditForm" action="$!homeServer.getURI("orderInfo/doUpdate.htm")" method="post">
+  <table>
+  #springBind("orderInfoEditForm.id")
+  <input type="hidden" name="${status.expression}" value="$!status.value" />
+                #springBind("orderInfoEditForm.id")
+          <tr>
+              <td>id</td>
+              <td>
+                  <input type="text" name="${status.expression}" value="$!status.value" />
+                  #foreach($error in $status.errorMessages) <b>$error</b>  #end
+              </td>
+          </tr>
+                #springBind("orderInfoEditForm.goodsId")
+          <tr>
+              <td>goodsId</td>
+              <td>
+                  <input type="text" name="${status.expression}" value="$!status.value" />
+                  #foreach($error in $status.errorMessages) <b>$error</b>  #end
+              </td>
+          </tr>
+                #springBind("orderInfoEditForm.userId")
+          <tr>
+              <td>userId</td>
+              <td>
+                  <input type="text" name="${status.expression}" value="$!status.value" />
+                  #foreach($error in $status.errorMessages) <b>$error</b>  #end
+              </td>
+          </tr>
+                #springBind("orderInfoEditForm.leaveMsg")
+          <tr>
+              <td>leaveMsg</td>
+              <td>
+                  <input type="text" name="${status.expression}" value="$!status.value" />
+                  #foreach($error in $status.errorMessages) <b>$error</b>  #end
+              </td>
+          </tr>
+                #springBind("orderInfoEditForm.isDeleted")
+          <tr>
+              <td>isDeleted</td>
+              <td>
+                  <input type="text" name="${status.expression}" value="$!status.value" />
+                  #foreach($error in $status.errorMessages) <b>$error</b>  #end
+              </td>
+          </tr>
+                #springBind("orderInfoEditForm.gmtModify")
+          <tr>
+              <td>gmtModify</td>
+              <td>
+                  <input type="text" name="${status.expression}" value="$!status.value" />
+                  #foreach($error in $status.errorMessages) <b>$error</b>  #end
+              </td>
+          </tr>
+                #springBind("orderInfoEditForm.gmtCreate")
+          <tr>
+              <td>gmtCreate</td>
+              <td>
+                  <input type="text" name="${status.expression}" value="$!status.value" />
+                  #foreach($error in $status.errorMessages) <b>$error</b>  #end
+              </td>
+          </tr>
+      	  <tr>
+	  <td colspan="2">
+	  <input type="submit" value="提交"/></td>
+	  </tr>
+  </table>
+</form>

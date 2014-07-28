@@ -1,0 +1,52 @@
+$!courtApply详情
+  <table class="table">
+                <tr>
+              <td>id</td>
+              <td>
+                  $!courtApplyDO.id
+              </td>
+          </tr>
+
+                <tr>
+              <td>userId</td>
+              <td>
+                  $!courtApplyDO.userId
+              </td>
+          </tr>
+
+                <tr>
+              <td>courtId</td>
+              <td>
+                  $!courtApplyDO.courtId
+              </td>
+          </tr>
+
+                <tr>
+              <td>bookingTime</td>
+              <td>
+                  $!courtApplyDO.bookingTime
+              </td>
+          </tr>
+
+                <tr>
+              <td>isDeleted</td>
+              <td>
+                  $!courtApplyDO.isDeleted
+              </td>
+          </tr>
+
+                <tr>
+              <td>gmtModify</td>
+              <td>
+                  $!courtApplyDO.gmtModify
+              </td>
+          </tr>
+
+                <tr>
+              <td>gmtCreate</td>
+              <td>
+                  $!courtApplyDO.gmtCreate
+              </td>
+          </tr>
+
+        </table>

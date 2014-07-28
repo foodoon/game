@@ -1,0 +1,84 @@
+编辑
+
+<form name="challengeAcceptEditForm" action="$!homeServer.getURI("challengeAccept/doUpdate.htm")" method="post">
+  <table>
+  #springBind("challengeAcceptEditForm.id")
+  <input type="hidden" name="${status.expression}" value="$!status.value" />
+                #springBind("challengeAcceptEditForm.id")
+          <tr>
+              <td>id</td>
+              <td>
+                  <input type="text" name="${status.expression}" value="$!status.value" />
+                  #foreach($error in $status.errorMessages) <b>$error</b>  #end
+              </td>
+          </tr>
+                #springBind("challengeAcceptEditForm.challengeId")
+          <tr>
+              <td>challengeId</td>
+              <td>
+                  <input type="text" name="${status.expression}" value="$!status.value" />
+                  #foreach($error in $status.errorMessages) <b>$error</b>  #end
+              </td>
+          </tr>
+                #springBind("challengeAcceptEditForm.teamId")
+          <tr>
+              <td>teamId</td>
+              <td>
+                  <input type="text" name="${status.expression}" value="$!status.value" />
+                  #foreach($error in $status.errorMessages) <b>$error</b>  #end
+              </td>
+          </tr>
+                #springBind("challengeAcceptEditForm.goalCount")
+          <tr>
+              <td>goalCount</td>
+              <td>
+                  <input type="text" name="${status.expression}" value="$!status.value" />
+                  #foreach($error in $status.errorMessages) <b>$error</b>  #end
+              </td>
+          </tr>
+                #springBind("challengeAcceptEditForm.challengeResult")
+          <tr>
+              <td>challengeResult</td>
+              <td>
+                  <input type="text" name="${status.expression}" value="$!status.value" />
+                  #foreach($error in $status.errorMessages) <b>$error</b>  #end
+              </td>
+          </tr>
+                #springBind("challengeAcceptEditForm.accept")
+          <tr>
+              <td>accept</td>
+              <td>
+                  <input type="text" name="${status.expression}" value="$!status.value" />
+                  #foreach($error in $status.errorMessages) <b>$error</b>  #end
+              </td>
+          </tr>
+                #springBind("challengeAcceptEditForm.isDeleted")
+          <tr>
+              <td>isDeleted</td>
+              <td>
+                  <input type="text" name="${status.expression}" value="$!status.value" />
+                  #foreach($error in $status.errorMessages) <b>$error</b>  #end
+              </td>
+          </tr>
+                #springBind("challengeAcceptEditForm.gmtModify")
+          <tr>
+              <td>gmtModify</td>
+              <td>
+                  <input type="text" name="${status.expression}" value="$!status.value" />
+                  #foreach($error in $status.errorMessages) <b>$error</b>  #end
+              </td>
+          </tr>
+                #springBind("challengeAcceptEditForm.gmtCreate")
+          <tr>
+              <td>gmtCreate</td>
+              <td>
+                  <input type="text" name="${status.expression}" value="$!status.value" />
+                  #foreach($error in $status.errorMessages) <b>$error</b>  #end
+              </td>
+          </tr>
+      	  <tr>
+	  <td colspan="2">
+	  <input type="submit" value="提交"/></td>
+	  </tr>
+  </table>
+</form>

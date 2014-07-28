@@ -1,0 +1,66 @@
+$!challengeAccept详情
+  <table class="table">
+                <tr>
+              <td>id</td>
+              <td>
+                  $!challengeAcceptDO.id
+              </td>
+          </tr>
+
+                <tr>
+              <td>challengeId</td>
+              <td>
+                  $!challengeAcceptDO.challengeId
+              </td>
+          </tr>
+
+                <tr>
+              <td>teamId</td>
+              <td>
+                  $!challengeAcceptDO.teamId
+              </td>
+          </tr>
+
+                <tr>
+              <td>goalCount</td>
+              <td>
+                  $!challengeAcceptDO.goalCount
+              </td>
+          </tr>
+
+                <tr>
+              <td>challengeResult</td>
+              <td>
+                  $!challengeAcceptDO.challengeResult
+              </td>
+          </tr>
+
+                <tr>
+              <td>accept</td>
+              <td>
+                  $!challengeAcceptDO.accept
+              </td>
+          </tr>
+
+                <tr>
+              <td>isDeleted</td>
+              <td>
+                  $!challengeAcceptDO.isDeleted
+              </td>
+          </tr>
+
+                <tr>
+              <td>gmtModify</td>
+              <td>
+                  $!challengeAcceptDO.gmtModify
+              </td>
+          </tr>
+
+                <tr>
+              <td>gmtCreate</td>
+              <td>
+                  $!challengeAcceptDO.gmtCreate
+              </td>
+          </tr>
+
+        </table>

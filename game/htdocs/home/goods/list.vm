@@ -1,0 +1,30 @@
+<a  class="btn btn-default"  href="$!homeServer.getURI("goods/create.htm")" >新建</a>
+
+<table  class="table">
+ <tr>
+              id
+              goodsName
+              goodsDesc
+              price
+              courtId
+              isDeleted
+              gmtModify
+              gmtCreate
+          <td>操作</td>
+ </tr>
+#foreach($f in $goodsDOList)
+  <tr>
+               <td> $!f.id</td>
+               <td> $!f.goodsName</td>
+               <td> $!f.goodsDesc</td>
+               <td> $!f.price</td>
+               <td> $!f.courtId</td>
+               <td> $!f.isDeleted</td>
+               <td> $!f.gmtModify</td>
+               <td> $!f.gmtCreate</td>
+          <td><a href="$!homeServer.getURI("goods/edit.htm").addQueryData('id',"$!f.id")" >编辑</a></td>
+    <td><a href="$!homeServer.getURI("goods/detail.htm").addQueryData('id',"$!f.id")" >查看详情</a></td>
+      <td><a href="$!homeServer.getURI("goods/doDelete.htm").addQueryData('id',"$!f.id")" onclick="return confirm('确定删除吗?')">删除</a></td>
+ </tr>
+#end
+</table>

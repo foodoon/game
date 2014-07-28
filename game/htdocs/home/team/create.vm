@@ -1,0 +1,67 @@
+新增
+
+<form name="teamForm" action="$!homeServer.getURI("team/doCreate.htm")" method="post">
+  <table>
+    #springBind("teamForm.id")
+    <tr>
+        <td>id</td>
+        <td>
+            <input class="form-control" type="text" name="${status.expression}" value="$!status.value" />
+            #foreach($error in $status.errorMessages) <b>$error</b>  #end
+        </td>
+    </tr>
+    #springBind("teamForm.name")
+    <tr>
+        <td>name</td>
+        <td>
+            <input class="form-control" type="text" name="${status.expression}" value="$!status.value" />
+            #foreach($error in $status.errorMessages) <b>$error</b>  #end
+        </td>
+    </tr>
+    #springBind("teamForm.desc")
+    <tr>
+        <td>desc</td>
+        <td>
+            <input class="form-control" type="text" name="${status.expression}" value="$!status.value" />
+            #foreach($error in $status.errorMessages) <b>$error</b>  #end
+        </td>
+    </tr>
+    #springBind("teamForm.canJoin")
+    <tr>
+        <td>canJoin</td>
+        <td>
+            <input class="form-control" type="text" name="${status.expression}" value="$!status.value" />
+            #foreach($error in $status.errorMessages) <b>$error</b>  #end
+        </td>
+    </tr>
+    #springBind("teamForm.isDeleted")
+    <tr>
+        <td>isDeleted</td>
+        <td>
+            <input class="form-control" type="text" name="${status.expression}" value="$!status.value" />
+            #foreach($error in $status.errorMessages) <b>$error</b>  #end
+        </td>
+    </tr>
+    #springBind("teamForm.gmtModify")
+    <tr>
+        <td>gmtModify</td>
+        <td>
+            <input class="form-control" type="text" name="${status.expression}" value="$!status.value" />
+            #foreach($error in $status.errorMessages) <b>$error</b>  #end
+        </td>
+    </tr>
+    #springBind("teamForm.gmtCreate")
+    <tr>
+        <td>gmtCreate</td>
+        <td>
+            <input class="form-control" type="text" name="${status.expression}" value="$!status.value" />
+            #foreach($error in $status.errorMessages) <b>$error</b>  #end
+        </td>
+    </tr>
+
+	  <tr>
+	  <td colspan="2">
+	  <input type="submit" class="btn" value="提交"/></td>
+	  </tr>
+  </table>
+</form>

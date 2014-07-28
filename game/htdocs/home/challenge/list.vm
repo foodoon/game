@@ -1,0 +1,34 @@
+<a  class="btn btn-default"  href="$!homeServer.getURI("challenge/create.htm")" >新建</a>
+
+<table  class="table">
+ <tr>
+              id
+              userId
+              courtId
+              challengeTime
+              challengeDesc
+              challengeResult
+              goalCount
+              isDeleted
+              gmtModify
+              gmtCreate
+          <td>操作</td>
+ </tr>
+#foreach($f in $challengeDOList)
+  <tr>
+               <td> $!f.id</td>
+               <td> $!f.userId</td>
+               <td> $!f.courtId</td>
+               <td> $!f.challengeTime</td>
+               <td> $!f.challengeDesc</td>
+               <td> $!f.challengeResult</td>
+               <td> $!f.goalCount</td>
+               <td> $!f.isDeleted</td>
+               <td> $!f.gmtModify</td>
+               <td> $!f.gmtCreate</td>
+          <td><a href="$!homeServer.getURI("challenge/edit.htm").addQueryData('id',"$!f.id")" >编辑</a></td>
+    <td><a href="$!homeServer.getURI("challenge/detail.htm").addQueryData('id',"$!f.id")" >查看详情</a></td>
+      <td><a href="$!homeServer.getURI("challenge/doDelete.htm").addQueryData('id',"$!f.id")" onclick="return confirm('确定删除吗?')">删除</a></td>
+ </tr>
+#end
+</table>

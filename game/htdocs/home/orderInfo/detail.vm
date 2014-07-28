@@ -1,0 +1,52 @@
+$!orderInfo详情
+  <table class="table">
+                <tr>
+              <td>id</td>
+              <td>
+                  $!orderInfoDO.id
+              </td>
+          </tr>
+
+                <tr>
+              <td>goodsId</td>
+              <td>
+                  $!orderInfoDO.goodsId
+              </td>
+          </tr>
+
+                <tr>
+              <td>userId</td>
+              <td>
+                  $!orderInfoDO.userId
+              </td>
+          </tr>
+
+                <tr>
+              <td>leaveMsg</td>
+              <td>
+                  $!orderInfoDO.leaveMsg
+              </td>
+          </tr>
+
+                <tr>
+              <td>isDeleted</td>
+              <td>
+                  $!orderInfoDO.isDeleted
+              </td>
+          </tr>
+
+                <tr>
+              <td>gmtModify</td>
+              <td>
+                  $!orderInfoDO.gmtModify
+              </td>
+          </tr>
+
+                <tr>
+              <td>gmtCreate</td>
+              <td>
+                  $!orderInfoDO.gmtCreate
+              </td>
+          </tr>
+
+        </table>

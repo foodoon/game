@@ -1,0 +1,45 @@
+$!challengeMsg详情
+  <table class="table">
+                <tr>
+              <td>id</td>
+              <td>
+                  $!challengeMsgDO.id
+              </td>
+          </tr>
+
+                <tr>
+              <td>challengeId</td>
+              <td>
+                  $!challengeMsgDO.challengeId
+              </td>
+          </tr>
+
+                <tr>
+              <td>msg</td>
+              <td>
+                  $!challengeMsgDO.msg
+              </td>
+          </tr>
+
+                <tr>
+              <td>isDeleted</td>
+              <td>
+                  $!challengeMsgDO.isDeleted
+              </td>
+          </tr>
+
+                <tr>
+              <td>gmtModify</td>
+              <td>
+                  $!challengeMsgDO.gmtModify
+              </td>
+          </tr>
+
+                <tr>
+              <td>gmtCreate</td>
+              <td>
+                  $!challengeMsgDO.gmtCreate
+              </td>
+          </tr>
+
+        </table>

@@ -1,0 +1,59 @@
+$!goods详情
+  <table class="table">
+                <tr>
+              <td>id</td>
+              <td>
+                  $!goodsDO.id
+              </td>
+          </tr>
+
+                <tr>
+              <td>goodsName</td>
+              <td>
+                  $!goodsDO.goodsName
+              </td>
+          </tr>
+
+                <tr>
+              <td>goodsDesc</td>
+              <td>
+                  $!goodsDO.goodsDesc
+              </td>
+          </tr>
+
+                <tr>
+              <td>price</td>
+              <td>
+                  $!goodsDO.price
+              </td>
+          </tr>
+
+                <tr>
+              <td>courtId</td>
+              <td>
+                  $!goodsDO.courtId
+              </td>
+          </tr>
+
+                <tr>
+              <td>isDeleted</td>
+              <td>
+                  $!goodsDO.isDeleted
+              </td>
+          </tr>
+
+                <tr>
+              <td>gmtModify</td>
+              <td>
+                  $!goodsDO.gmtModify
+              </td>
+          </tr>
+
+                <tr>
+              <td>gmtCreate</td>
+              <td>
+                  $!goodsDO.gmtCreate
+              </td>
+          </tr>
+
+        </table>

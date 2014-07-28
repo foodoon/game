@@ -1,0 +1,52 @@
+$!team详情
+  <table class="table">
+                <tr>
+              <td>id</td>
+              <td>
+                  $!teamDO.id
+              </td>
+          </tr>
+
+                <tr>
+              <td>name</td>
+              <td>
+                  $!teamDO.name
+              </td>
+          </tr>
+
+                <tr>
+              <td>desc</td>
+              <td>
+                  $!teamDO.desc
+              </td>
+          </tr>
+
+                <tr>
+              <td>canJoin</td>
+              <td>
+                  $!teamDO.canJoin
+              </td>
+          </tr>
+
+                <tr>
+              <td>isDeleted</td>
+              <td>
+                  $!teamDO.isDeleted
+              </td>
+          </tr>
+
+                <tr>
+              <td>gmtModify</td>
+              <td>
+                  $!teamDO.gmtModify
+              </td>
+          </tr>
+
+                <tr>
+              <td>gmtCreate</td>
+              <td>
+                  $!teamDO.gmtCreate
+              </td>
+          </tr>
+
+        </table>
