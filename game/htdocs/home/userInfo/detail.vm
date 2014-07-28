@@ -1,0 +1,80 @@
+$!userInfo详情
+  <table class="table">
+                <tr>
+              <td>id</td>
+              <td>
+                  $!userInfoDO.id
+              </td>
+          </tr>
+
+                <tr>
+              <td>userName</td>
+              <td>
+                  $!userInfoDO.userName
+              </td>
+          </tr>
+
+                <tr>
+              <td>password</td>
+              <td>
+                  $!userInfoDO.password
+              </td>
+          </tr>
+
+                <tr>
+              <td>phone</td>
+              <td>
+                  $!userInfoDO.phone
+              </td>
+          </tr>
+
+                <tr>
+              <td>groundTypeOfEnjoy</td>
+              <td>
+                  $!userInfoDO.groundTypeOfEnjoy
+              </td>
+          </tr>
+
+                <tr>
+              <td>special</td>
+              <td>
+                  $!userInfoDO.special
+              </td>
+          </tr>
+
+                <tr>
+              <td>groundOfDaily</td>
+              <td>
+                  $!userInfoDO.groundOfDaily
+              </td>
+          </tr>
+
+                <tr>
+              <td>status</td>
+              <td>
+                  $!userInfoDO.status
+              </td>
+          </tr>
+
+                <tr>
+              <td>img</td>
+              <td>
+                  $!userInfoDO.img
+              </td>
+          </tr>
+
+                <tr>
+              <td>gmtModify</td>
+              <td>
+                  $!userInfoDO.gmtModify
+              </td>
+          </tr>
+
+                <tr>
+              <td>gmtCreate</td>
+              <td>
+                  $!userInfoDO.gmtCreate
+              </td>
+          </tr>
+
+        </table>

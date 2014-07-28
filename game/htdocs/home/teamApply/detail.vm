@@ -1,0 +1,52 @@
+$!teamApply详情
+  <table class="table">
+                <tr>
+              <td>id</td>
+              <td>
+                  $!teamApplyDO.id
+              </td>
+          </tr>
+
+                <tr>
+              <td>teamId</td>
+              <td>
+                  $!teamApplyDO.teamId
+              </td>
+          </tr>
+
+                <tr>
+              <td>userId</td>
+              <td>
+                  $!teamApplyDO.userId
+              </td>
+          </tr>
+
+                <tr>
+              <td>status</td>
+              <td>
+                  $!teamApplyDO.status
+              </td>
+          </tr>
+
+                <tr>
+              <td>isDeleted</td>
+              <td>
+                  $!teamApplyDO.isDeleted
+              </td>
+          </tr>
+
+                <tr>
+              <td>gmtModify</td>
+              <td>
+                  $!teamApplyDO.gmtModify
+              </td>
+          </tr>
+
+                <tr>
+              <td>gmtCreate</td>
+              <td>
+                  $!teamApplyDO.gmtCreate
+              </td>
+          </tr>
+
+        </table>

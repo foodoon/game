@@ -1,0 +1,68 @@
+编辑
+
+<form name="teamApplyEditForm" action="$!homeServer.getURI("teamApply/doUpdate.htm")" method="post">
+  <table>
+  #springBind("teamApplyEditForm.id")
+  <input type="hidden" name="${status.expression}" value="$!status.value" />
+                #springBind("teamApplyEditForm.id")
+          <tr>
+              <td>id</td>
+              <td>
+                  <input type="text" name="${status.expression}" value="$!status.value" />
+                  #foreach($error in $status.errorMessages) <b>$error</b>  #end
+              </td>
+          </tr>
+                #springBind("teamApplyEditForm.teamId")
+          <tr>
+              <td>teamId</td>
+              <td>
+                  <input type="text" name="${status.expression}" value="$!status.value" />
+                  #foreach($error in $status.errorMessages) <b>$error</b>  #end
+              </td>
+          </tr>
+                #springBind("teamApplyEditForm.userId")
+          <tr>
+              <td>userId</td>
+              <td>
+                  <input type="text" name="${status.expression}" value="$!status.value" />
+                  #foreach($error in $status.errorMessages) <b>$error</b>  #end
+              </td>
+          </tr>
+                #springBind("teamApplyEditForm.status")
+          <tr>
+              <td>status</td>
+              <td>
+                  <input type="text" name="${status.expression}" value="$!status.value" />
+                  #foreach($error in $status.errorMessages) <b>$error</b>  #end
+              </td>
+          </tr>
+                #springBind("teamApplyEditForm.isDeleted")
+          <tr>
+              <td>isDeleted</td>
+              <td>
+                  <input type="text" name="${status.expression}" value="$!status.value" />
+                  #foreach($error in $status.errorMessages) <b>$error</b>  #end
+              </td>
+          </tr>
+                #springBind("teamApplyEditForm.gmtModify")
+          <tr>
+              <td>gmtModify</td>
+              <td>
+                  <input type="text" name="${status.expression}" value="$!status.value" />
+                  #foreach($error in $status.errorMessages) <b>$error</b>  #end
+              </td>
+          </tr>
+                #springBind("teamApplyEditForm.gmtCreate")
+          <tr>
+              <td>gmtCreate</td>
+              <td>
+                  <input type="text" name="${status.expression}" value="$!status.value" />
+                  #foreach($error in $status.errorMessages) <b>$error</b>  #end
+              </td>
+          </tr>
+      	  <tr>
+	  <td colspan="2">
+	  <input type="submit" value="提交"/></td>
+	  </tr>
+  </table>
+</form>

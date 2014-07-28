@@ -1,0 +1,45 @@
+$!teamRecruit详情
+  <table class="table">
+                <tr>
+              <td>id</td>
+              <td>
+                  $!teamRecruitDO.id
+              </td>
+          </tr>
+
+                <tr>
+              <td>userId</td>
+              <td>
+                  $!teamRecruitDO.userId
+              </td>
+          </tr>
+
+                <tr>
+              <td>desc</td>
+              <td>
+                  $!teamRecruitDO.desc
+              </td>
+          </tr>
+
+                <tr>
+              <td>isDeleted</td>
+              <td>
+                  $!teamRecruitDO.isDeleted
+              </td>
+          </tr>
+
+                <tr>
+              <td>gmtModify</td>
+              <td>
+                  $!teamRecruitDO.gmtModify
+              </td>
+          </tr>
+
+                <tr>
+              <td>gmtCreate</td>
+              <td>
+                  $!teamRecruitDO.gmtCreate
+              </td>
+          </tr>
+
+        </table>

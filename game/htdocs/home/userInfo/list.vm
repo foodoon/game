@@ -1,0 +1,36 @@
+<a  class="btn btn-default"  href="$!homeServer.getURI("userInfo/create.htm")" >新建</a>
+
+<table  class="table">
+ <tr>
+              id
+              userName
+              password
+              phone
+              groundTypeOfEnjoy
+              special
+              groundOfDaily
+              status
+              img
+              gmtModify
+              gmtCreate
+          <td>操作</td>
+ </tr>
+#foreach($f in $userInfoDOList)
+  <tr>
+               <td> $!f.id</td>
+               <td> $!f.userName</td>
+               <td> $!f.password</td>
+               <td> $!f.phone</td>
+               <td> $!f.groundTypeOfEnjoy</td>
+               <td> $!f.special</td>
+               <td> $!f.groundOfDaily</td>
+               <td> $!f.status</td>
+               <td> $!f.img</td>
+               <td> $!f.gmtModify</td>
+               <td> $!f.gmtCreate</td>
+          <td><a href="$!homeServer.getURI("userInfo/edit.htm").addQueryData('id',"$!f.id")" >编辑</a></td>
+    <td><a href="$!homeServer.getURI("userInfo/detail.htm").addQueryData('id',"$!f.id")" >查看详情</a></td>
+      <td><a href="$!homeServer.getURI("userInfo/doDelete.htm").addQueryData('id',"$!f.id")" onclick="return confirm('确定删除吗?')">删除</a></td>
+ </tr>
+#end
+</table>

@@ -1,0 +1,28 @@
+<a  class="btn btn-default"  href="$!homeServer.getURI("team/create.htm")" >新建</a>
+
+<table  class="table">
+ <tr>
+              id
+              name
+              desc
+              canJoin
+              isDeleted
+              gmtModify
+              gmtCreate
+          <td>操作</td>
+ </tr>
+#foreach($f in $teamDOList)
+  <tr>
+               <td> $!f.id</td>
+               <td> $!f.name</td>
+               <td> $!f.desc</td>
+               <td> $!f.canJoin</td>
+               <td> $!f.isDeleted</td>
+               <td> $!f.gmtModify</td>
+               <td> $!f.gmtCreate</td>
+          <td><a href="$!homeServer.getURI("team/edit.htm").addQueryData('id',"$!f.id")" >编辑</a></td>
+    <td><a href="$!homeServer.getURI("team/detail.htm").addQueryData('id',"$!f.id")" >查看详情</a></td>
+      <td><a href="$!homeServer.getURI("team/doDelete.htm").addQueryData('id',"$!f.id")" onclick="return confirm('确定删除吗?')">删除</a></td>
+ </tr>
+#end
+</table>
