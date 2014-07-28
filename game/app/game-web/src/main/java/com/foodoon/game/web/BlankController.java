@@ -7,9 +7,7 @@ package com.foodoon.game.web;
 import javax.servlet.http.HttpServletRequest;
 
 
-import com.foodoon.game.biz.BlankBiz;
 import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,26 +25,14 @@ public class BlankController {
 
     private final static Logger logger = Logger.getLogger(BlankController.class);
 
-    @Autowired
-    private BlankBiz blankBiz;
-
     @RequestMapping(method = RequestMethod.GET)
     public String doGet(HttpServletRequest request, ModelMap modelMap) {
         if (logger.isInfoEnabled()) {
-            logger.info("test url��" + request.getRequestURL());
+            logger.info("test url" + request.getRequestURL());
         }
-        modelMap.addAttribute("attr", blankBiz.getTest());
         return "index.vm";
 
     }
 
-    /**
-     * Setter method for property <tt>blankBiz</tt>.
-     * 
-     * @param blankBiz value to be assigned to property blankBiz
-     */
-    public void setBlankBiz(BlankBiz blankBiz) {
-        this.blankBiz = blankBiz;
-    }
 
 }

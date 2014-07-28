@@ -10,11 +10,14 @@
 
 	<context:component-scan base-package="com.foodoon.game.web" />
 
-	<bean id="propertyConfigurer"
-		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+	<bean id="gudaPropertyConfigurer"
+		class="com.foodoon.mvc.runtime.core.spring.GudaPropertyConfigurer">
 		<property name="ignoreUnresolvablePlaceholders" value="false"></property>
 		<property name="fileEncoding" value="UTF-8"></property>
         <property name="locations" value="classpath:test.properties"/>
+    </bean>
+
+    <bean    class="com.foodoon.mvc.runtime.core.spring.SpringBeanFactoryTool">
     </bean>
 
 	<bean id="messageSource"

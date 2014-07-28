@@ -18,8 +18,8 @@ SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 -- Table structure for `game_challenge`
 -- ----------------------------
-DROP TABLE IF EXISTS `game_challenge`;
-CREATE TABLE `game_challenge` (
+DROP TABLE IF EXISTS `challenge`;
+CREATE TABLE `challenge` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
   `court_id` int(11) NOT NULL,
@@ -40,8 +40,8 @@ CREATE TABLE `game_challenge` (
 -- ----------------------------
 -- Table structure for `game_challenge_accept`
 -- ----------------------------
-DROP TABLE IF EXISTS `game_challenge_accept`;
-CREATE TABLE `game_challenge_accept` (
+DROP TABLE IF EXISTS `challenge_accept`;
+CREATE TABLE `challenge_accept` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `challenge_id` int(11) NOT NULL,
   `team_id` int(11) NOT NULL,
@@ -61,8 +61,8 @@ CREATE TABLE `game_challenge_accept` (
 -- ----------------------------
 -- Table structure for `game_challenge_msg`
 -- ----------------------------
-DROP TABLE IF EXISTS `game_challenge_msg`;
-CREATE TABLE `game_challenge_msg` (
+DROP TABLE IF EXISTS `challenge_msg`;
+CREATE TABLE `challenge_msg` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `challenge_id` int(11) NOT NULL,
   `msg` varchar(1024) NOT NULL,
@@ -79,8 +79,8 @@ CREATE TABLE `game_challenge_msg` (
 -- ----------------------------
 -- Table structure for `game_court`
 -- ----------------------------
-DROP TABLE IF EXISTS `game_court`;
-CREATE TABLE `game_court` (
+DROP TABLE IF EXISTS `court`;
+CREATE TABLE `court` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(256) NOT NULL,
   `address` varchar(1024) DEFAULT NULL,
@@ -103,8 +103,8 @@ CREATE TABLE `game_court` (
 -- ----------------------------
 -- Table structure for `game_court_apply`
 -- ----------------------------
-DROP TABLE IF EXISTS `game_court_apply`;
-CREATE TABLE `game_court_apply` (
+DROP TABLE IF EXISTS `court_apply`;
+CREATE TABLE `court_apply` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
   `court_id` int(11) NOT NULL,
@@ -122,8 +122,8 @@ CREATE TABLE `game_court_apply` (
 -- ----------------------------
 -- Table structure for `game_goods`
 -- ----------------------------
-DROP TABLE IF EXISTS `game_goods`;
-CREATE TABLE `game_goods` (
+DROP TABLE IF EXISTS `goods`;
+CREATE TABLE `goods` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `goods_name` varchar(64) NOT NULL,
   `goods_desc` varchar(1024) DEFAULT NULL,
@@ -142,8 +142,8 @@ CREATE TABLE `game_goods` (
 -- ----------------------------
 -- Table structure for `game_order`
 -- ----------------------------
-DROP TABLE IF EXISTS `game_order`;
-CREATE TABLE `game_order` (
+DROP TABLE IF EXISTS `order_info`;
+CREATE TABLE `order_info` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `goods_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
@@ -161,8 +161,8 @@ CREATE TABLE `game_order` (
 -- ----------------------------
 -- Table structure for `game_team`
 -- ----------------------------
-DROP TABLE IF EXISTS `game_team`;
-CREATE TABLE `game_team` (
+DROP TABLE IF EXISTS `team`;
+CREATE TABLE `team` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(64) NOT NULL,
   `desc` varchar(1024) DEFAULT NULL,
@@ -180,8 +180,8 @@ CREATE TABLE `game_team` (
 -- ----------------------------
 -- Table structure for `game_team_apply`
 -- ----------------------------
-DROP TABLE IF EXISTS `game_team_apply`;
-CREATE TABLE `game_team_apply` (
+DROP TABLE IF EXISTS `team_apply`;
+CREATE TABLE `team_apply` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `team_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
@@ -199,8 +199,8 @@ CREATE TABLE `game_team_apply` (
 -- ----------------------------
 -- Table structure for `game_team_recruit`
 -- ----------------------------
-DROP TABLE IF EXISTS `game_team_recruit`;
-CREATE TABLE `game_team_recruit` (
+DROP TABLE IF EXISTS `team_recruit`;
+CREATE TABLE `team_recruit` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
   `desc` varchar(1024) DEFAULT NULL,
@@ -217,8 +217,8 @@ CREATE TABLE `game_team_recruit` (
 -- ----------------------------
 -- Table structure for `game_user`
 -- ----------------------------
-DROP TABLE IF EXISTS `game_user`;
-CREATE TABLE `game_user` (
+DROP TABLE IF EXISTS `user_info`;
+CREATE TABLE `user_info` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_name` varchar(16) NOT NULL,
   `password` varchar(32) NOT NULL,

@@ -3,9 +3,9 @@ package com.foodoon.game.gen;
 import com.foodoon.gooda.gen.DemoGen;
 
 /**
- * Created by foodoon on 2014/6/28.
+ * Created by foodoon on 2014/7/28.
  */
-public class StaffGen {
+public class ActionGen {
 
     private static String jdbcPath = "e:\\repo\\mysql\\mysql-connector-java\\5.1.9\\mysql-connector-java-5.1.9.jar";
 
@@ -17,9 +17,9 @@ public class StaffGen {
         demoGen.setJdbcUsername("root");
         demoGen.setJdbcPath(jdbcPath);
         demoGen.setJdbUrl(jdbUrl);
-        //demoGen.genDAO("staff","well");
-       // DemoGen.genDaoXML("staff","well");
 
-        DemoGen.genAction("staff","well");
+        DemoGen.genDaoXML("challenge","game","com.foodoon");
+        DemoGen.genBiz("challenge","game","com.foodoon");
+        DemoGen.genAction("challenge","game","com.foodoon");
     }
 }
